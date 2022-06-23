@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <footer>
-            <div className= "footer-copyright text-center py-3 " style={{background:'#24292F', color:'white'}}>© 2020 Copyright:
+            <div className="footer-copyright text-center py-3 " style={{ background: '#24292F', color: 'white' }}>© 2022 Copyright:
                 Textile Industry - ERP
             </div>
         </footer>
