@@ -29,13 +29,13 @@ function Day() {
                     <div>
                         <div className="row Input">
                             <label className="col-12" for="salary">Total Salary : </label>
-                            <input className="col form-control" id="salary" type="number" value={totSal} type="number" placeholder="Enter total salary of the day" onChange={(e) => { setTotSal(e.target.value) }} ></input>
+                            <input className="col form-control" id="salary" type="number" value={totSal} placeholder="Enter total salary of the day" onChange={(e) => { setTotSal(e.target.value) }} ></input>
                         </div>
                         <div className="row Input">
                             <label className="col-12" for="no_of_workers">No of workers : </label>
-                            <input className="col form-control" id="no_of_workers" type="number" value={nWorkers} type="number" placeholder="Enter no of workers" onChange={(e) => { setNoOfWorkers(e.target.value) }} ></input>
+                            <input className="col form-control" id="no_of_workers" type="number" value={nWorkers} placeholder="Enter no of workers" onChange={(e) => { setNoOfWorkers(e.target.value) }} ></input>
                         </div>
-                        <button className="btn btn-primary" style={{width:'80%'}}>Save</button>
+                        <button className="btn btn-primary" style={{ width: '80%' }}>Save</button>
                     </div> : null}
                 <button className="btn btn-outline-dark" style={{ width: '80%', padding: '1rem', margin: '2rem' }} onClick={handleEBill}>E Bill</button>
                 {ebill ? <h2>H2</h2> : null}

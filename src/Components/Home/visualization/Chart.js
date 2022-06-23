@@ -1,9 +1,8 @@
 import React from 'react'
 import './Chart.css'
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts';
-import { Legend } from 'chart.js';
 
-function Chart({title, data, dataKey, grid}) {
+function Chart({ title, data, dataKey, grid }) {
     // const  data = [{
     //     month: "Jan",
     //     ActiveUser: 4000,
@@ -80,13 +79,13 @@ function Chart({title, data, dataKey, grid}) {
     return (
         <div className="container chart">
             <h3 className="chartTitle">{title}</h3>
-            <ResponsiveContainer width="100%" aspect={4/1}>
+            <ResponsiveContainer width="100%" aspect={4 / 1}>
                 <LineChart data={data}>
-                    <XAxis dataKey="month" stroke="green"/>
-                    <YAxis dataKey="amt" stroke="black"/>
+                    <XAxis dataKey="month" stroke="green" />
+                    <YAxis dataKey="amt" stroke="black" />
                     <Line type="monotone" dataKey={dataKey} stroke="blue"></Line>
-                    <Tooltip/>
-                    {grid && <CartesianGrid stroke="#e0dfdf"/>}
+                    <Tooltip />
+                    {grid && <CartesianGrid stroke="#e0dfdf" />}
                 </LineChart>
             </ResponsiveContainer>
         </div>

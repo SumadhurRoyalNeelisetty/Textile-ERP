@@ -116,7 +116,7 @@ function AddEmployee() {
                 </div>
                 <div className="row Input">
                     <label className="col-2" for="salary">Salary : </label>
-                    <input className="col form-control" id="salary" name="salary" type="number" value={employee.salary} type="number" placeholder="Enter salary of employee" onChange={handleChange} ></input>
+                    <input className="col form-control" id="salary" name="salary" type="number" value={employee.salary} placeholder="Enter salary of employee" onChange={handleChange} ></input>
                 </div>
                 <button className="btn btn-success btn-blk" type="submit" onClick={handleSubmit}>Submit</button>
 

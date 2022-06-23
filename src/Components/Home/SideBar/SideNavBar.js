@@ -1,6 +1,6 @@
 import React from 'react';
 import './SideNavBar.css';
-import { LineStyle, Timeline, TrendingUp, Today, DateRange, EventNote, Feedback } from '@material-ui/icons';
+import { LineStyle, Timeline, Today, DateRange, EventNote, Feedback } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 
 function SideNavBar() {
@@ -82,14 +82,14 @@ function SideNavBar() {
                     <ul className="sideBarList">
                         <Link to="/month" className="link">
                             <li className="sideBarListItem">
-                                <DateRange className="sideBarIcon"/> Month
+                                <DateRange className="sideBarIcon" /> Month
                             </li>
                         </Link>
                     </ul>
                     <ul className="sideBarList">
                         <Link to="/yearly" className="link">
                             <li className="sideBarListItem">
-                                <EventNote className="sideBarIcon"/> Yearly
+                                <EventNote className="sideBarIcon" /> Yearly
                             </li>
                         </Link>
                     </ul>
